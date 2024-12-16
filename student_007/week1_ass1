@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#Recieves 3 argument 
+echo "First argument:$1"
+echo "Secong argument:$2"
+echo "Third argument:$3"
+
+
+ 
+
+
