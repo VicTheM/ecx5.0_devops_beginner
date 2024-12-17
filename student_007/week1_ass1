@@ -1,9 +1,27 @@
 #!/bin/bash
 
-#Recieves 3 argument 
-echo "First argument:$1"
-echo "Secong argument:$2"
-echo "Third argument:$3"
+# Check if 3 arguments are passed
+if [ $# -lt 3 ]; then
+    echo "Error: Use three arguments."
+    exit 1
+fi
+
+# Assign arguments to variables
+folder_name=$1
+file_name=$2
+text=$3
+
+#create a folder
+mkdir "$folder_name"
+if [ $? -ne 0 ]; then
+    echo "Error: Failed to create $folder_name folder."
+    exit 1
+fi
+echo " $folder_name folder created successfully."
+
+# Create a file in the folder
+
+
 
 
  
