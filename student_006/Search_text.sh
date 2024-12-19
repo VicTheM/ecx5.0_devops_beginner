@@ -6,6 +6,13 @@ if [ $# -ne 3 ]; then
   exit 0
 fi
 
+# Check if the specified file exists in the given directory
+if [ ! -f "$search_path/$file_name" ]; then
+  # If the file doesn't exist, display an error message and exit with status 1
+  echo "Error: File '$file_name' does not exist in directory '$search_path'."
+  exit 1
+fi
+
 # Assign arguments to variables
 search_path=$1
 file_name=$2
