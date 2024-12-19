@@ -4,6 +4,9 @@
 if [ $# -ne 3 ]; then
   echo "Error: Missing arguments. Provide 3 arguments."
   exit 1
+  if [ -d "$folder_name" ]; then
+  echo "Folder '$folder_name' already exists."
+
 fi
 
 # Assign arguments to variables
