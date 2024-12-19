@@ -38,7 +38,7 @@ fi
 echo "Task completed"
 
 #change permission for others to read only 
- chmod o=r "$file_name"
+ chmod o=r "$folder_name/$file_name"
 if [ $? -ne 0 ];  then
     echo " Error: Failed to change $file_name file permission"
        exit 1
