@@ -26,6 +26,6 @@ grep -q "$text" "$path/$file"
 if [$? -eq 0 ]; then
     echo "Text found."
 else
-    echo"Text not found."
+    echo "Text not found."
 
 fi
