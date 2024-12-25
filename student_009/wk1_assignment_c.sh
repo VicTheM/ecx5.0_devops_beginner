@@ -13,21 +13,21 @@ file=$2
 text=$3
 
 ##checking if directory exists
-if [[ ! -d "$path" ]];
+if [[ ! -d "$directory_path" ]];
 then
     echo "Error! The directory $directory_path does not exist."
     exit 1
 fi
 
 #checking if file exists
-if [[ ! -f "$path/$file" ]]
+if [[ ! -f "$directory_path/$file" ]]
 then
     echo "Error! The file $file does not exist in the directory $directory_path."
     exit 1
 fi
 
 #searching for the text
-grep "$text" "$path/$file"
+grep "$text" "$directory_path/$file"
 
 if [[ $? -eq 0 ]];
 then
