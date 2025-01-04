@@ -1,0 +1,36 @@
+Justification for the Online Chess Platform Architecture
+
+My design for the online chess platform ensures it runs smoothly, handles lots of players at once, and keeps everything reliable. Here’s how each part of the system works:
+
+1. Load Balancer & Web Servers  
+What it does: 
+The load balancer helps share user traffic between several servers. This means:  
+- No single server gets overloaded, even when many people are playing at the same time.  
+- If one server has an issue, the others can step in to keep the platform running.  
+
+2. Game Server & WebSocket Technology  
+What it does:  
+This part is the brain of the platform. It handles real-time chess games by:  
+- Instantly updating players’ moves.  
+- Making sure games stay consistent and accurate for everyone.  
+
+3. Caching & Database  
+What it does:  
+- Caching makes sure frequently used information (like game rules or a list of chess pieces) is quickly available without stressing the database.  
+- The database securely stores important data, like:  
+- Player profiles and settings.  
+- Game histories, so players can review past matches.
+
+4. Content Delivery Network (CDN)  
+What it does:  
+- Delivers things like images and other static content to players faster, no matter where they are in the world. 
+- It reduces the workload on the main servers so everything runs smoother.
+
+
+Why This Design is Perfect for Chess: 
+- It supports real-time gameplay without delays.  
+- It handles many games happening at once without breaking a sweat.  
+- It keeps data safe and accessible at all times.  
+- It makes sure players worldwide have a smooth experience.
+
+This setup is not only efficient but also cost-effective, and it’s ready to grow as more players join the platform.
