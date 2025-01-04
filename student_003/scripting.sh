@@ -1,24 +1,32 @@
 #!/bin/bash
 
-# Check if the number of arguments is less than 3
+# Check for exactly 3 arguments
 if [ "$#" -ne 3 ]; then
     echo "Error: You must provide exactly 3 arguments."
+    echo "USAGE: ./script_name folder_name file_name text_content"
     exit 1
 fi
 
-# One: get the arguments
-subfolder_name=$1
-file_name=$2
-text=$3
+# Receive arguments
+sub_folder_name="$1"
+file_name="$2"
+text_content="$3"
 
-# Two: create the folder
-mkdir -p "$subfolder_name"
+# Define a safe directory outside the repo (e.g., user's home directory)
+safe_directory="$HOME/safe_directory"
 
-# Three: create file with text content
-echo "$text" > "$subfolder_name/$file_name.txt"
+# Create the safe directory if it doesn't exist
+mkdir -p "$safe_directory"
 
-# Four: set the file to read-only for others
-chmod o=r "$subfolder_name/$file_name.txt"
+# Create the sub-folder within the safe directory
+mkdir -p "$safe_directory/$sub_folder_name"
 
-echo "Created $subfolder_name/$file_name.txt with the content: '$text'"
+# Create the file with the text content
+echo "$text_content" > "$safe_directory/$sub_folder_name/$file_name.txt"
+
+# Set permissions to readonly for others
+chmod o=r "$safe_directory/$sub_folder_name/$file_name.txt"
+
+echo "File created at $safe_directory/$sub_folder_name/$file_name.txt with the content: '$text_content'"
+
 
