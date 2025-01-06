@@ -1,0 +1,12 @@
+Justification of Architecture Design
+1. Scalability: A load balancer and multiple web servers ensure that the platform can handle increased traffic without crashing.
+2. Reliability: Redundant servers minimize downtime and enhance user experience.
+3. Real-time Updates: WebSocket or Firebase ensures immediate move synchronization, a must-have feature for multiplayer games.
+
+Individual Roles
+1. Frontend Layer (Client's Browser): The frontend represents the user interface of the chess platform. 
+2. Load Balancer: Distributes incoming traffic among multiple web servers.
+3. Web Servers: Communicate with the database and manage user authentication.
+4. Game Logic Service: Validates moves based on chess rules.
+5. Database Layer: Provides persistent data access for analytics or replaying matches.
+6. Real-time Communication Service: Facilitates in-game chat between players.
