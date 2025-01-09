@@ -1,0 +1,9 @@
+I chose each component for the chess application because:
+~ The External Databases near the End Devices are there to provide various libraries for the front-end of the application which helps reduce the load on the Web Server.
+~ The Content Delivery Network (CDN) reduces latency and provides other services like security & authentication (CloudFlare).
+~ The first Load Balancer is to efficiently distributes traffic across the Web Server which serves as the gateway for content and manage requests.
+~ The Secondary Load Balancer ensures high availability and fault tolerance for the Application Server, which handles core logic, real-time interactions, and matchmaking.
+~ The the backend Databases for structured storage.
+~ The APIs for internal service communication.
+~ The Game Engine for chess logic, analysis and game AI.
+~ The integration of External Databases and APIs with the CDN ensures both consistency and performance for critical external dependencies while maintaining the responsiveness required for real-time gameplay.
