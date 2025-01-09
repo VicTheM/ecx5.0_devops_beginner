@@ -1,0 +1,10 @@
+#!/bin/bash
+
+files=$(ls -1 | sort)
+
+counter=1
+
+for file in $files; do
+   echo "[$counter] $file"
+   counter=$((counter + 1))
+done
