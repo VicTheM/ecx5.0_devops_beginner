@@ -1,0 +1,10 @@
+The design was chosen to clearly and logically represent the system's components and their interactions. By including the Client (Browser), Web Server, Application Server, Database Server, External Services, and flow points (Start, Completion Check, Return Point, and End), it simplifies the process of understanding the roles and responsibilities of each part.
+
+Key reasons for choosing this design:
+
+Modularity: Each component is distinct and labeled, allowing the team to analyze or modify parts of the system independently.
+Interactivity: The connections between components demonstrate how data flows through the system, making it easier to pinpoint where interactions occur.
+User-Centric: Identifying start and end points provides clarity on how users engage with the system and the outcomes of their interactions.
+Scalability: This structure accommodates future modifications, such as adding new features or external integrations.
+Accessibility: The simplicity ensures that team members with varying technical expertise can understand and contribute effectively.
+This design prioritizes clarity and collaboration, which are critical for a development team working on complex projects like an online chess site.
