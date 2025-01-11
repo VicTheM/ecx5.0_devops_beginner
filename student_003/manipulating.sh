@@ -4,14 +4,12 @@
 if [ "$#" -lt 3 ]; then
     echo "USAGE: ./filename path file text"
     exit 0
-
 fi
 
-
 # Receive the arguments
-path = $1
-file = $2
-text = $3
+path=$1
+file=$2
+text=$3
 
 # Check if the specified file exists in the given directory
 if [ ! -f "$path/$file" ]; then
@@ -23,9 +21,9 @@ fi
 grep -q "$text" "$path/$file"
 
 # Check the result of the search
-if [$? -eq 0 ]; then
+if [ $? -eq 0 ]; then
     echo "Text found."
 else
     echo "Text not found."
-
 fi
+
