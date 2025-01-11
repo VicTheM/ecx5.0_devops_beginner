@@ -10,5 +10,5 @@ file { '/home/README.md':
     owner => 'root',
     group => 'root',
     mode => '0644',
-    requre => Exec['install_flask'],
+    require => Exec['install_flask'],
 }
