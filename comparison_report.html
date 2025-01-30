@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparison Between Containerized Applications and Virtualization Technologies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        h3, h4 {
+            color: #333;
+        }
+        p {
+            margin: 15px 0;
+            padding: 0 20px;
+            font-size: 1.1rem;
+        }
+        table {
+            width: 100%;
+            margin: 20px 0;
+            border-collapse: collapse;
+        }
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            text-align: center;
+            margin: 40px 0;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Comparison Between Containerized Applications and Virtualization Technologies</h1>
+    </header>
+    
+    <div class="content">
+        <h3>Introduction</h3>
+        <p>In modern computing, applications can be deployed using either traditional virtualization technologies or containerized applications, each with their own benefits and challenges. In this comparison, we will look at the key features and differences between Virtual Machines (VMs) and Containers.</p>
+        
+        <h3>Virtualization Technologies</h3>
+        <p>Virtual Machines (VMs) are created using hypervisors, which allow multiple OS instances to run on a single physical machine. Each VM is an independent entity, with its own OS and resources.</p>
+        
+        <h4>Key Features of VMs:</h4>
+        <ul>
+            <li><strong>Isolation</strong>: Each VM runs independently with its OS.</li>
+            <li><strong>Resource Allocation</strong>: Requires a large amount of CPU, memory, and disk space.</li>
+            <li><strong>Performance Overhead</strong>: Due to the full OS, VMs are slower and heavier.</li>
+            <li><strong>Security</strong>: Strong isolation since each VM has its OS and kernel.</li>
+        </ul>
+        
+        <h3>Containerized Applications</h3>
+        <p>Containers, such as those managed by Docker, encapsulate applications and their dependencies into a single package that can be run consistently across different environments.</p>
+        
+        <h4>Key Features of Containers:</h4>
+        <ul>
+            <li><strong>Lightweight</strong>: Containers share the OS kernel, consuming fewer resources.</li>
+            <li><strong>Speed</strong>: Faster startup time compared to VMs.</li>
+            <li><strong>Portability</strong>: Easily deployable across different environments.</li>
+            <li><strong>Scalability</strong>: Easier to scale due to minimal overhead.</li>
+        </ul>
+
+        <h3>Comparison Table</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Feature</th>
+                    <th>Virtual Machines (VMs)</th>
+                    <th>Containers</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>OS Overhead</td>
+                    <td>High (each VM has a full OS)</td>
+                    <td>Low (shared OS kernel)</td>
+                </tr>
+                <tr>
+                    <td>Startup Time</td>
+                    <td>Slow (minutes)</td>
+                    <td>Fast (seconds)</td>
+                </tr>
+                <tr>
+                    <td>Resource Usage</td>
+                    <td>High (heavyweight)</td>
+                    <td>Low (lightweight)</td>
+                </tr>
+                <tr>
+                    <td>Isolation</td>
+                    <td>Strong (separate OS per VM)</td>
+                    <td>Moderate (shared OS)</td>
+                </tr>
+                <tr>
+                    <td>Portability</td>
+                    <td>Limited</td>
+                    <td>High</td>
+                </tr>
+                <tr>
+                    <td>Scalability</td>
+                    <td>Difficult</td>
+                    <td>Easy</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="image-container">
+            <img src="https://www.google.com/url?sa=i&url=https%3A%2F%" alt="Container vs Virtual Machine">
+        </div>
+
+        <h3>Conclusion</h3>
+        <p>Both VMs and containers have their advantages. VMs are suitable for applications that require strong isolation and separate operating systems, while containers excel in speed, portability, and scalability. The choice between them depends on the specific needs of the application and the resources available.</p>
+    </div>
+
+    <footer>
+        <p>Created by Fatimah Aderinale</p>
+    </footer>
+</body>
+</html>
