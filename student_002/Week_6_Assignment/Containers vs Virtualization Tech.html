@@ -1,0 +1,64 @@
+<html>
+ <head>
+  <title>Your Page Title</title>
+  <style>
+    body {
+      font-family: sans-serif; /* Sets a default font for the body */
+      margin: 20px; /* Adds some margin around the content */
+      background-color: #f0f0f0; /* A light gray background */
+    }
+    h1 {
+      color: #333; /* Dark gray heading color */
+    }
+    p {
+      line-height: 1.6; /* Improves readability of paragraphs */
+    }
+    a {
+      color: blue; /* Standard blue link color */
+      text-decoration: none; /* Removes underlines from links */
+    }
+    a:hover {
+      text-decoration: underline; /* Adds underline on link hover */
+    }
+  </style>
+</head>
+  <body>
+    <main>
+      <h1>Containerized Apps vs Virtualization Tech</h1>
+      <section>
+        <h2>What are Containerized Apps?</h2>
+        <p>Containerized apps are applications packaged into isolated, portable containers that include all the necessary components to run the app, such as code, libraries, and dependencies. These containers can be classified into several types: single-container apps, where the entire application is housed in one container; multi-container apps, where different parts of an app run in separate containers but work together, often managed by orchestration tools like Docker Compose or Kubernetes; stateful containers, which retain data persistence for applications like databases; serverless containers, which run only when triggered and provide scalability and cost efficiency; development containers, offering consistent environments for building and testing applications; CI/CD containers, streamlining the testing, building, and deployment processes in development pipelines; and legacy application containers, which modernize older applications by packaging them in containers without rewriting the original code.
+</p>
+        <h2>What are Virtualization Technologies?</h2>
+        <p>Not to be confused with VMs, which are a derivative of it, virtualization technology is a method that allows multiple operating systems or applications to run on a single physical machine by abstracting hardware resources. This technology enables the creation of virtual environments, with several types of virtualization including full virtualization, para-virtualization, and hardware-assisted virtualization, each offering different levels of interaction with the underlying hardware. Additionally, containerization is another type of virtualization, focusing on isolating applications rather than entire operating systems, offering a lightweight alternative. Virtualization is crucial for optimizing resource utilization, improving scalability, and enabling efficient management of multiple workloads on a single host machine.</p>
+        <h2>Their Differences?</h2>
+        <p>The key difference between containerized applications and other virtualization technologies lies in how they handle system resources and isolation. Here’s a breakdown:
+
+1. Containerized Applications
+   - Technology: Uses operating system (OS)-level virtualization.
+   - Isolation: Containers share the host OS kernel but run in isolated user spaces.
+   - Lightweight: Since containers do not need a full guest OS, they are smaller and start up quickly.
+   - Portability: Containers package everything needed to run an application, making them highly portable across different environments (e.g., from development to production).
+   - Example: Docker, Kubernetes, Podman.
+
+2. Other Virtualization Technologies (Traditional Virtual Machines - VMs)
+   - Technology: Uses hardware-level virtualization via a hypervisor (e.g., VMware, KVM, Hyper-V).
+   - Isolation: Each VM has its own full OS, making it more isolated and secure but also resource-intensive.
+   - Heavyweight: Since VMs include a full OS, they require more memory and storage, leading to slower startup times.
+   - Portability: Less portable compared to containers because each VM has dependencies tied to its OS.</p>
+         <h3>Comparison Table</h3>
+         <p>To understand things better, here's a comparison table:</p>
+         <img src="Comparison Table.png" alt="A table of comparison between Containers and Virtualization technology">
+         <h3>When To Use Which?</h3>
+         <ul>
+          <li>Use Containers when you need fast, scalable, and lightweight applications that work across different environments.</li>
+          <li>Use VMs when you need stronger isolation, support for multiple OS types, or running legacy applications.</li>
+         </ul>
+         <p>In summary, containers are best for modern, cloud-native applications, while VMs are better for traditional infrastructure with higher security needs.</p>
+       </section>
+    </main>
+  </body>
+</html>
+         
+         
+   
